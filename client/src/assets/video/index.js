@@ -1,0 +1,1 @@
+export { default as LoginBg } from "../video/login_bg1.mp4";
