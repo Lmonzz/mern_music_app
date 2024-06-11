@@ -167,7 +167,7 @@ const DashboardNewSong = () => {
                 })
             }, 5000);
 
-            setSongName(null);
+            setSongName("");
             setisAudioLoading(false);
             setisImageLoading(false);
             setsongImageCover(null);

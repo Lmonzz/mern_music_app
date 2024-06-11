@@ -13,7 +13,7 @@ router.get("/login", async(req, res) => {
 
     const token = req.headers.authorization.split(" ")[1];//lay phan token nhung k lay bearer
 
-    //decode token using admin priviliges
+    //decode token su dung admin priviliges
     try{
         const decodeValue = await admin.auth().verifyIdToken(token);
         if(!decodeValue){

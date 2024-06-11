@@ -11,6 +11,8 @@ import { IoClose, IoMusicalNote } from 'react-icons/io5';
 
 
 const MusicPlayer = () => {
+    const [{ allSongs, songIndex, isSongPlaying }, dispatch] = useStateValue();
+    const [isPlayList, setisPlayList] = useState(false);
 
     const nextTrack = () => {
         if (songIndex === allSongs.length - 1) {
@@ -47,8 +49,7 @@ const MusicPlayer = () => {
         })
     }
 
-    const [{ allSongs, songIndex, isSongPlaying }, dispatch] = useStateValue();
-    const [isPlayList, setisPlayList] = useState(false);
+    
 
     return (
         <div className='w-full flex items-center gap-3'>
